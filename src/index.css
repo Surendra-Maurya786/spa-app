@@ -22,5 +22,31 @@ body {
     
   }
  .card{
+   margin-top: 10%;
    width:18rem;
  }
+
+ .row-container{
+
+   margin-top:10%;
+   margin-left:30%;
+
+   text-align: center;
+   width:500px;
+   height:300px;
+ 
+   border:2px solid tomato;
+ }
+
+ .form-padding{
+/* 
+  margin: 20%; */
+  padding: 10px;
+ }
+.err_login{
+  color:red;
+  padding: 2px;
+}
+label{
+  padding: 5px;
+}

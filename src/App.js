@@ -4,11 +4,13 @@ import Footer from './Footer';
 import { Route, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
+import Login from './Login';
+import Sdata from './Sdata';
 const Home = () => {
   return ( 
     <>
    <Navbar />
-   
+ 
   
     <Container>
     <div className="row">
@@ -16,16 +18,40 @@ const Home = () => {
       <div className="col-md-4">
       <div className="card" >
       
-  <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="card-img-top" alt="..."/>
+  <img src={Sdata[0].imgsrc} className="card-img-top" alt="..."/>
   <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 className="card-title">{Sdata[0].title}</h5>
+    <p className="card-text">{Sdata[0].paragraph}</p>
     <a href="#" className="btn btn-primary">Go somewhere</a>
   </div>
 </div>
       </div>
 
       <div className="col-md-4">
+      <div className="card" >
+      
+  <img src={Sdata[1].imgsrc} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">{Sdata[1].title}</h5>
+    <p className="card-text">{Sdata[1].paragraph}</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+      </div>
+
+      <div className="col-md-4">
+      <div className="card" >
+      
+  <img src={Sdata[2].imgsrc} className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">{Sdata[2].title}</h5>
+    <p className="card-text">{Sdata[2].paragraph}</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+      </div>
+
+      {/* <div className="col-md-4">
       <div className="card" >
   <img src="https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="card-img-top" alt="..."/>
   <div className="card-body">
@@ -46,7 +72,7 @@ const Home = () => {
   </div>
 </div>
 
-  </div>
+  </div> */}
   
 
     </div>
@@ -342,6 +368,10 @@ const App = () => {
 
       <Route path="/wheather">
         <Weather />
+      </Route>
+
+      <Route path="/login">
+        <Login />
       </Route>
     </Switch>
   );

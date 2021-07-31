@@ -64,6 +64,7 @@ const Navbar = () => {
             <ReactBootstrap.Nav.Link > <NavLink to="/contact">Contact</NavLink></ReactBootstrap.Nav.Link>
             <ReactBootstrap.Nav.Link > <NavLink to="/todo">ToDo</NavLink></ReactBootstrap.Nav.Link>
             <ReactBootstrap.Nav.Link > <NavLink to="/wheather">Wheather</NavLink></ReactBootstrap.Nav.Link>
+            <ReactBootstrap.Nav.Link > <NavLink to="/login">Login</NavLink></ReactBootstrap.Nav.Link>
             <div className="ms-end">
             <h1 className="date"> {ctime} </h1>
             </div>
